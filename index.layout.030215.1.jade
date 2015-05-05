@@ -10,12 +10,11 @@ html(lang="en")
 	body
 		include ./includes/googleCode.jade
 		
-		.wrapper
-			block header
-			
-			block content
-			
-			block footer
+		block header
+		
+		block content
+		
+		block footer
 
 		//- currently best practice to include scripts just before end of body
 		include ./includes/scripts.jade 

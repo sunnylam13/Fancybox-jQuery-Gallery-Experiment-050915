@@ -52,9 +52,9 @@ body {
 	z-index: 10;
 }
 
-.main {
-	margin: 2% -1% 2% 2%;
-}
+// .main {
+// 	margin: 2% -1% 2% 2%;
+// }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	margin: 0;
@@ -86,25 +86,7 @@ p {
 ///// 		CONTENT
 ///////////////////////////////////////////////
 
-// @import 'content';
-
-////////////////////////////////////////////
-///// 		SIDEBAR
-///////////////////////////////////////////////
-
-// @import 'sidebar';
-
-////////////////////////////////////////////
-///// 		TESTIMONIALS
-///////////////////////////////////////////////
-
-// @import 'testimonials';
-
-////////////////////////////////////////////
-///// 		HEADING
-///////////////////////////////////////////////
-
-// @import 'logos';
+@import 'index.scss';
 
 ////////////////////////////////////////////
 ///// 		FOOTER

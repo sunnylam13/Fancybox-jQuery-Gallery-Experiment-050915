@@ -66,17 +66,17 @@
 	border: $thick $state $colour;
 }
 
-@mixin flexboxSettings041715a {
+@mixin flexboxRow1 {
 	// ROW
 	// this is used within a parent without the class .flexbox... the actual class name used will vary
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	align-content: center;
+	align-content: space-around;
 	align-items: center;
 }
 
-@mixin flexboxSettings042215a {
+@mixin flexboxColumn1 {
 	// COLUMN
 	// this is used within a parent without the class .flexbox... the actual class name used will vary
 	display: flex;
@@ -114,6 +114,14 @@
 	font-style: normal;
 	margin:0px 10px 0px 0px;
 	text-decoration:none;
+}
+
+@mixin scalePadding042815a($x,$y) {
+	padding: $y $x $y $x;
+}
+
+@mixin scaleMargin042815a($x,$y) {
+	margin: $y $x $y $x;
 }
 
 // // END PERSONAL FAVOURITES ------------------------------------------------
