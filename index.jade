@@ -16,7 +16,9 @@ block content
 			// these are the small images whose link leads to the larger version of the image
 
 			.preview
-				+generateThumbnailsArchitecture3
+				//- +generateThumbnailsArchitecture3
+				+generateThumbnailsArchitecture3b
+				//- +generateThumbnailsArchitecture4
 
 			////////////////////////////////////////////
 
@@ -35,7 +37,9 @@ block content
 			.full
 				// first image is viewable to start
 				//- img(src="images/fashion/top1large.jpg", class='previewFull', alt="Gallery Full Sized Image")
-				img(src="images/architecture/architecture1large.jpg", class='previewFull', alt="Gallery Full Sized Image")
+				//- img(src="images/architecture/architecture1large.jpg", class='previewFull', alt="Gallery Full Sized Image")
+				a(href="./images/architecture/architecture1large.jpg",class='fancybox')
+					img(src="./images/architecture/architecture1large.jpg", class='previewFull', alt="Gallery Full Sized Image")
 
 			////////////////////////////////////////////
 
