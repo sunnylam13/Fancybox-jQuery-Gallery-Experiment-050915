@@ -1,0 +1,43 @@
+extends index.layout.030215.1.jade
+
+block content
+	.container.clearfix
+		.gallery
+			h1 jQuery Gallery
+
+			//- ===================================
+			//- 		THUMBNAIL IMAGES
+			//- ===================================
+
+			////////////////////////////////////////////
+			// 		THUMBNAIL IMAGES
+			///////////////////////////////////////////
+			
+			// these are the small images whose link leads to the larger version of the image
+
+			.preview
+				+generateThumbnailsArchitecture3
+
+			////////////////////////////////////////////
+
+
+			//- END THUMBNAIL IMAGES
+			
+
+			//- ===================================
+			//- 		LARGE IMAGE DISPLAY PANEL
+			//- ===================================
+
+			////////////////////////////////////////////
+			// 		LARGE IMAGE DISPLAY PANEL
+			///////////////////////////////////////////
+			
+			.full
+				// first image is viewable to start
+				//- img(src="images/fashion/top1large.jpg", class='previewFull', alt="Gallery Full Sized Image")
+				img(src="images/architecture/architecture1large.jpg", class='previewFull', alt="Gallery Full Sized Image")
+
+			////////////////////////////////////////////
+
+
+			//- END LARGE IMAGE DISPLAY PANEL

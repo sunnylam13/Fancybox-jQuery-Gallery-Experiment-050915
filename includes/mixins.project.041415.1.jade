@@ -1,0 +1,66 @@
+//- ===================================
+//- 		MIXINS PROJECT
+//- ===================================
+
+//- These mixins are specific to this project only.
+//- move mixins here only if they are required in other sections of the site
+
+mixin generateThumbnailsFashion1(selectedClass)
+	//- reference variables.global.jade
+	//- where selectedClass can be any string, typically 'selected'
+	//- Monday, May 4, 2015 9:02 PM:  this currently doesn't work because the first one of the array is always selected unless you use jQuery to change that
+	
+	- var insertClassSet1 = selectedClass + ' ' + 'fancybox';
+	- var n = 0
+
+	if selectedClass
+		a(href=value,class='fancybox',rel='group',data-full=value)
+			each value in fashionImageArraySmall1
+				img(src=value, alt="Gallery Thumbnail Image")
+	else
+		a(href=value,class='fancybox',rel='group',data-full=value)
+			each value in fashionImageArraySmall1
+				img(src=value, alt="Gallery Thumbnail Image")
+
+	each value in fashionImageArrayLarge1
+		a(href=value,class='fancybox',rel='group',data-full=value)
+			each value in fashionImageArraySmall1
+				img(src=value, alt="Gallery Thumbnail Image")
+
+mixin generateThumbnailsFashion2
+	a(href="javascript:void(0)",class='selected fancybox',rel='group',data-full='./images/fashion/top1large.jpg')
+		img(src="./images/fashion/top1small.jpg", alt="Gallery Thumbnail Image")
+	a(href="javascript:void(0)",class='fancybox',rel='group',data-full='./images/fashion/top2large.jpg')
+		img(src="./images/fashion/top2small.jpg", alt="Gallery Thumbnail Image")
+	a(href="javascript:void(0)",class='fancybox',rel='group',data-full='./images/fashion/top3large.jpg')
+		img(src="./images/fashion/top3small.jpg", alt="Gallery Thumbnail Image")
+	a(href="javascript:void(0)",class='fancybox',rel='group',data-full='./images/fashion/top4large.jpg')
+		img(src="./images/fashion/top4small.jpg", alt="Gallery Thumbnail Image")
+	a(href="javascript:void(0)",class='fancybox',rel='group',data-full='./images/fashion/top5large.jpg')
+		img(src="./images/fashion/top5small.jpg", alt="Gallery Thumbnail Image")
+
+mixin generateThumbnailsFashion3
+	a(href="./images/fashion/top1large.jpg",class='selected fancybox',rel='group',data-full='./images/fashion/top1large.jpg')
+		img(src="./images/fashion/top1small.jpg", alt="Gallery Thumbnail Image")
+	a(href="./images/fashion/top2large.jpg",class='fancybox',rel='group',data-full='./images/fashion/top2large.jpg')
+		img(src="./images/fashion/top2small.jpg", alt="Gallery Thumbnail Image")
+	a(href="./images/fashion/top3large.jpg",class='fancybox',rel='group',data-full='./images/fashion/top3large.jpg')
+		img(src="./images/fashion/top3small.jpg", alt="Gallery Thumbnail Image")
+	a(href="./images/fashion/top4large.jpg",class='fancybox',rel='group',data-full='./images/fashion/top4large.jpg')
+		img(src="./images/fashion/top4small.jpg", alt="Gallery Thumbnail Image")
+	a(href="./images/fashion/top5small.jpg",class='fancybox',rel='group',data-full='./images/fashion/top5large.jpg')
+		img(src="./images/fashion/top5small.jpg", alt="Gallery Thumbnail Image")
+
+mixin generateThumbnailsArchitecture3
+	a(href="javascript:void(0)",class='selected fancybox',rel='group',data-full='./images/architecture/architecture1large.jpg')
+		img(src="./images/architecture/architecture1small.jpg", alt="Gallery Thumbnail Image")
+	a(href="javascript:void(0)",class='fancybox',rel='group',data-full='./images/architecture/architecture2large.jpg')
+		img(src="./images/architecture/architecture2small.jpg", alt="Gallery Thumbnail Image")
+	a(href="javascript:void(0)",class='fancybox',rel='group',data-full='./images/architecture/architecture3large.jpg')
+		img(src="./images/architecture/architecture3small.jpg", alt="Gallery Thumbnail Image")
+	a(href="javascript:void(0)",class='fancybox',rel='group',data-full='./images/architecture/architecture4large.jpg')
+		img(src="./images/architecture/architecture4small.jpg", alt="Gallery Thumbnail Image")
+	a(href="javascript:void(0)",class='fancybox',rel='group',data-full='./images/architecture/architecture5large.jpg')
+		img(src="./images/architecture/architecture5small.jpg", alt="Gallery Thumbnail Image")
+
+//- END MIXINS PROJECT 
