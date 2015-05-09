@@ -1,0 +1,69 @@
+////////////////////////////////////////////
+///// 		INDEX HTML
+///////////////////////////////////////////////
+
+// this is the main page, primary page
+
+// GALLERY  ------------------------------------------------
+section.gallery {
+	// flexbox
+	@include flexboxColumn1;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	width: 100%;
+	// for you to center elements vertically there must be a height
+	// you use viewport height
+	height: 90vh;
+
+	h1 {
+		margin-bottom: 5%;
+	}
+}
+
+section.displayWindow {
+	//flexbox
+	@include flexboxColumn1;
+	align-items: center;
+
+	width: 100%;
+}
+
+// // END GALLERY ------------------------------------------------
+
+// THUMBNAIL IMAGES  ------------------------------------------------
+
+section.displayWindow section.preview {
+	// flex child
+	order: 2;
+	flex: 1 auto;
+
+	//flexbox
+	@include flexboxRow1;
+	justify-content: space-between;
+	align-content: space-between;
+
+	// width: 100%;
+}
+
+section.displayWindow section.preview a {
+	// set the links to display inline block so that you can actually position it
+	// and you give it a width and height as well
+	display: inline-block;
+	width: 10em;
+	height: 5em;
+}
+
+// // END THUMBNAIL IMAGES ------------------------------------------------
+
+// LARGE IMAGE DISPLAY PANEL  ------------------------------------------------
+section.displayWindow section.full {
+	order: 1;
+	display: none;
+
+	width: 100%;
+}
+// // END LARGE IMAGE DISPLAY PANEL ------------------------------------------------
+
+///////////////////////////////////////////////
